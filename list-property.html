@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>List Your Property - RentConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>RentConnect</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Find a House</a>
+            <a href="list-property.html">List a House</a>
+            <a href="#">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Landlord Form -->
+
+    <main class="listing-page">
+
+        <div class="listing-container">
+
+            <h2>List Your Property</h2>
+
+            <p>
+                Enter your property details below.
+            </p>
+
+
+            <form id="property-form">
+
+                <label for="title">
+                    Property Title
+                </label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Example: Modern 2 Bedroom Apartment"
+                    required
+                >
+
+
+                <label for="location">
+                    Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: Kilimani, Nairobi"
+                    required
+                >
+
+
+                <label for="rent">
+                    Monthly Rent (KSh)
+                </label>
+
+                <input
+                    type="number"
+                    id="rent"
+                    placeholder="Example: 25000"
+                    required
+                >
+
+
+                <label for="bedrooms">
+                    Number of Bedrooms
+                </label>
+
+                <input
+                    type="number"
+                    id="bedrooms"
+                    placeholder="Example: 2"
+                    min="0"
+                    required
+                >
+
+
+                <label for="type">
+                    Property Type
+                </label>
+
+                <select id="type" required>
+
+                    <option value="">
+                        Select property type
+                    </option>
+
+                    <option value="Bedsitter">
+                        Bedsitter
+                    </option>
+
+                    <option value="1 Bedroom">
+                        1 Bedroom
+                    </option>
+
+                    <option value="2 Bedroom">
+                        2 Bedroom
+                    </option>
+
+                    <option value="3 Bedroom">
+                        3 Bedroom
+                    </option>
+
+                    <option value="House">
+                        House
+                    </option>
+
+                </select>
+
+
+                <label for="description">
+                    Property Description
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="6"
+                    placeholder="Describe the property..."
+                    required
+                ></textarea>
+
+
+                <label for="landlord">
+                    Landlord Name
+                </label>
+
+                <input
+                    type="text"
+                    id="landlord"
+                    placeholder="Your name"
+                    required
+                >
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Example: 0712345678"
+                    required
+                >
+
+
+                <label for="image">
+                    Property Photo
+                </label>
+
+                <input
+                    type="file"
+                    id="image"
+                    accept="image/*"
+                >
+
+
+                <button type="submit">
+                    Submit Property
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 RentConnect Kenya
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
