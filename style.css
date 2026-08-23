@@ -936,6 +936,101 @@ footer {
     .property-grid {
         grid-template-columns: 1fr;
     }
+   
+   /* =================================
+   LANDLORD LISTING PAGE
+   ================================= */
+
+.listing-page {
+    min-height: 80vh;
+    padding: 50px 20px;
+    background: #f5f7fa;
+}
+
+.listing-container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.listing-container h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.listing-container > p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#property-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#property-form label {
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+#property-form input,
+#property-form select,
+#property-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#property-form input:focus,
+#property-form select:focus,
+#property-form textarea:focus {
+    outline: none;
+    border-color: #0284c7;
+}
+
+#property-form textarea {
+    resize: vertical;
+}
+
+#property-form button {
+    margin-top: 30px;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #0284c7;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#property-form button:hover {
+    background: #0369a1;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .listing-container {
+        padding: 22px;
+    }
+
+    .listing-container h2 {
+        font-size: 26px;
+    }
+
+}
 
 }
 
