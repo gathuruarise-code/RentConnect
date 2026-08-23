@@ -116,5 +116,49 @@ if (propertyForm) {
         propertyForm.reset();
 
     });
+   // ========================================
+// DISPLAY LANDLORD-LISTED PROPERTIES
+// ========================================
+
+const propertyGrid = document.getElementById("property-grid");
+
+if (propertyGrid) {
+
+    const listedProperties =
+        JSON.parse(localStorage.getItem("rentConnectProperties")) || [];
+
+    listedProperties.forEach(function(property) {
+
+        const card = document.createElement("article");
+
+        card.className = "property-card";
+
+        card.innerHTML = `
+            <img src="images/house1.jpg" alt="${property.title}">
+
+            <div class="property-info">
+
+                <h3>${property.title}</h3>
+
+                <p class="location">
+                    📍 ${property.location}
+                </p>
+
+                <p class="price">
+                    ${property.price}
+                </p>
+
+                <p>
+                    ${property.description}
+                </p>
+
+                <button>View Property</button>
+
+            </div>
+        `;
+
+        propertyGrid.appendChild(card);
+
+    });
 
 }
